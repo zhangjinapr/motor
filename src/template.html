@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>通电线圈在磁场中转动 · 张专注物理</title>
+<style>
+:root{--ink:#153743;--muted:#647e86;--teal:#007c82;--line:#dce7e7}*{box-sizing:border-box}body{margin:0;background:#f3f7f7;color:var(--ink);font-family:"Microsoft YaHei",system-ui,sans-serif}header{max-width:1480px;margin:auto;padding:26px 30px 20px;display:flex;justify-content:space-between;gap:20px;align-items:center}.eyebrow{font-size:12px;letter-spacing:3px;color:var(--teal);font-weight:700}h1{font-size:28px;margin:8px 0}header p{color:var(--muted);margin:0;font-size:14px}.badge{border:1px solid #bad4d4;border-radius:24px;padding:10px 16px;font-size:13px;white-space:nowrap}main{max-width:1480px;margin:auto;padding:0 30px;display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:18px}.scene{position:relative;background:#e9f1f3;border:1px solid var(--line);border-radius:20px;overflow:hidden;height:620px}#view{width:100%;height:100%;display:block;touch-action:none}.scene:fullscreen{width:100vw;height:100vh;border-radius:0}.scenehead{position:absolute;top:18px;left:20px;pointer-events:none}.scenehead strong{display:block;font-size:14px}.scenehead span{font-size:12px;color:var(--muted)}.views{position:absolute;right:16px;top:16px;display:flex;gap:5px;flex-wrap:wrap;max-width:240px;justify-content:flex-end}button,select{font:inherit;color:var(--ink);cursor:pointer;border:1px solid #cbdcde;border-radius:9px;background:#fff;padding:9px 12px;font-size:13px}button:hover{border-color:var(--teal);background:#edf8f7}button.active,.primary{background:var(--teal);color:#fff;border-color:var(--teal)}.wm{position:absolute;bottom:20px;right:20px;font-size:16px;font-weight:bold;color:#395f6d;opacity:.45;pointer-events:none}.legend{position:absolute;bottom:20px;left:20px;display:flex;gap:14px;font-size:12px;flex-wrap:wrap}.legend i{width:8px;height:8px;display:inline-block;border-radius:50%;margin-right:5px}.hint{position:absolute;bottom:49px;left:20px;color:#647e86;font-size:11px;pointer-events:none}.panel{display:flex;flex-direction:column;gap:14px}.card{border:1px solid var(--line);background:#fff;border-radius:16px;padding:18px}.card h2{font-size:15px;margin:0 0 15px}.stepbuttons{display:flex;gap:7px}.stepbuttons button{flex:1;padding:11px 3px}.state{font-size:19px;color:var(--teal);margin:14px 0 8px;font-weight:700}.desc{line-height:1.8;font-size:13px;min-height:69px;color:#496570;margin:0}.row{display:flex;justify-content:space-between;align-items:center;margin:12px 0;gap:8px;font-size:13px}.row small{color:var(--muted)}input[type=range]{width:100%;accent-color:var(--teal)}.value{font-variant-numeric:tabular-nums;color:var(--teal);font-weight:700}.playrow{display:flex;gap:8px;margin-top:16px}.playrow button{flex:1;padding:9px 6px;white-space:nowrap}button:disabled{opacity:.45;cursor:default}.checks{display:grid;grid-template-columns:1fr 1fr;gap:13px;font-size:13px}.checks label{display:flex;align-items:center;gap:6px;cursor:pointer}input[type=checkbox]{accent-color:var(--teal)}#projection{display:block;width:100%;height:150px;background:#f7fafb;border-radius:10px}.foot{max-width:1480px;margin:20px auto 0;padding:0 30px 30px}.explain{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.explain div{padding:18px 20px;background:white;border:1px solid var(--line);border-radius:14px}.explain strong{font-size:14px}.explain p{font-size:13px;color:#55707b;line-height:1.8;margin:8px 0 0}.contact{display:flex;justify-content:center;gap:50px;border-top:1px solid var(--line);margin-top:26px;padding-top:22px;text-align:center;font-size:12px;color:var(--muted)}.contact>div{flex:0 1 260px;min-width:0}.contact img{width:125px;height:125px;object-fit:contain}.contact p{max-width:250px}.mobilehint{display:none}.notice{font-size:11px;color:var(--muted);text-align:center;line-height:1.8;margin-top:18px}
+@media(max-width:1050px){main{grid-template-columns:minmax(0,1fr) 300px}.scene{height:650px}header{padding:20px}main,.foot{padding-left:18px;padding-right:18px}.legend{max-width:230px}}@media(max-width:760px){header{padding:18px;display:block}h1{font-size:22px}.badge{display:none}main{display:block;padding:0 12px}.scene{height:440px;border-radius:14px}.scenehead{top:14px;left:14px}.scenehead span{display:none}.views{top:12px;right:10px;max-width:185px}.views button{font-size:11px;padding:7px 8px}.panel{margin-top:12px;display:grid;grid-template-columns:1fr}.card{padding:16px}.explain{grid-template-columns:1fr;gap:10px}.foot{padding:0 12px 25px}.contact{gap:18px}.contact>div{flex:0 1 260px;min-width:0}.contact img{width:105px;height:105px}.hint{bottom:66px;font-size:10px;left:14px}.legend{left:14px;bottom:18px;gap:9px}.wm{font-size:13px;right:12px;bottom:17px}.desktophint{display:none}.mobilehint{display:inline}}
+
+/* Dark classroom theme: hover keeps explicit foreground/background pairs. */
+:root{--ink:#edf4fa;--muted:#9baebc;--teal:#51d5c5;--line:#28333d}
+body,.scene{background:#000000}
+.card,.explain div{background:#090d12}
+.badge{border-color:#35434c;color:#c6d7e1}
+button,select{background:#17212b;color:#edf4fa;border-color:#3c4e5d}
+button:hover{background:#253544;color:#ffffff;border-color:#6fcbbf}
+button.active,.primary{background:#106d66;color:#ffffff;border-color:#2fa69a}
+button.active:hover,.primary:hover{background:#16877e;color:#ffffff;border-color:#7adbd0}
+button:focus-visible,select:focus-visible{outline:2px solid #8ff3e6;outline-offset:3px}
+.checks .continuous-option{grid-column:1/-1}option{background:#17212b;color:#edf4fa}
+.desc,.explain p{color:#b6c5d0}
+.wm{color:#a1b6c6}.hint{color:#96aaba}
+#projection{background:#000000}
+.force-note{font-size:11px;line-height:1.8;color:#a9bdcb;margin:14px 0 0}
+.contact img{background:#fff;padding:4px;border-radius:4px}
+.speedticks{display:flex;justify-content:space-between;color:var(--muted);font-size:11px;margin-top:4px}
+#speed{display:block;cursor:pointer}
+
+/* Keep explanations in the left column; a cropped QR entry stays in view. */
+body{padding-bottom:94px}
+.lesson-column{min-width:0;display:flex;flex-direction:column;gap:14px}
+.lesson-column .scene{flex:none}.lesson-column .explain{grid-template-columns:1fr;gap:10px;flex:1;display:flex;flex-direction:column}
+.lesson-column .explain div{padding:16px 20px;flex:1;display:flex;flex-direction:column;justify-content:center}
+.lesson-column .notice{margin:0;padding:0 12px;text-align:left}
+.scene{height:clamp(420px,calc(100vh - 220px),620px)}
+.scene:fullscreen{height:100vh}
+.qr-peekbar{position:fixed;left:0;right:0;bottom:0;z-index:20;height:80px;padding:8px 16px;display:flex;align-items:center;justify-content:center;gap:24px;background:rgba(0,0,0,.97);border-top:1px solid #2e434d}
+.qr-peek{display:flex;align-items:center;gap:14px;text-align:left;height:64px;min-width:240px;padding:8px 14px;background:#0b151c;border-color:#2e434d}
+.qr-window{display:block;flex:none;width:76px;height:36px;overflow:hidden;background:#fff;border-radius:3px}
+.qr-window img{display:block;width:76px;height:76px;max-width:none}
+.qr-peek strong{display:block;font-size:13px;font-weight:600;color:#edf5fa}
+.qr-peek small{display:block;margin-top:5px;font-size:11px;color:#a7c6cf}
+#qrDialog{width:min(620px,calc(100vw - 28px));max-height:85vh;overflow:auto;padding:22px;color:var(--ink);background:#090f16;border:1px solid #3d5963;border-radius:18px}
+#qrDialog::backdrop{background:rgba(0,0,0,.76)}
+.qr-dialog-head{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:20px}
+.qr-dialog-head h2{font-size:18px;margin:0}
+#qrDialog .contact{margin:0;padding:0;border:0;gap:24px}
+#qrDialog .contact img{width:190px;height:190px;max-width:100%;object-fit:contain}
+#qrDialog .contact p{color:#c5d5df;line-height:1.8}
+@media(max-width:760px){
+body{padding-bottom:86px}main{display:flex;flex-direction:column;gap:12px}.lesson-column{display:contents}.scene{height:440px;order:0}.panel{order:1;margin-top:0}.lesson-column .explain{order:2}.lesson-column .notice{order:3}
+.qr-peekbar{height:76px;gap:8px;padding:7px 8px}
+.qr-peek{min-width:0;width:50%;height:60px;gap:8px;padding:6px 8px}
+.qr-window{width:48px;height:27px}.qr-window img{width:48px;height:48px}
+.qr-peek strong{font-size:11px}.qr-peek small{font-size:9px;line-height:1.5}
+#qrDialog{padding:16px}.qr-dialog-head h2{font-size:16px}
+#qrDialog .contact{gap:14px}#qrDialog .contact img{width:135px;height:135px}
+}
+
+/* Fill classroom screens and keep the controls readable at a distance. */
+header,main,.foot{max-width:none;width:100%}
+header{padding:22px 24px 18px}
+main{padding:0 24px;grid-template-columns:minmax(0,1fr) clamp(340px,23vw,440px);gap:20px}
+h1{font-size:clamp(30px,1.65vw,42px)}
+.eyebrow{font-size:14px}header p,.badge{font-size:clamp(15px,.8vw,20px)}
+.scene{height:clamp(500px,calc(100vh - 230px),1040px)}
+.scenehead strong{font-size:clamp(16px,.85vw,21px)}.scenehead span{font-size:clamp(14px,.7vw,18px)}
+.views{max-width:340px;gap:7px}
+button,select{font-size:clamp(15px,.8vw,20px);padding:11px 14px}
+.card{padding:20px}.card h2{font-size:clamp(18px,.9vw,23px)}
+.state{font-size:clamp(23px,1.15vw,29px);height:2.8em;line-height:1.4;overflow:auto}
+.desc{font-size:clamp(16px,.8vw,20px);min-height:0;height:9em;line-height:1.8;overflow:auto;scrollbar-gutter:stable}
+.row,.checks{font-size:clamp(16px,.8vw,20px)}.row{margin:14px 0}
+.row small,.force-note{font-size:clamp(13px,.66vw,17px)}
+.checks{gap:15px}.checks input{width:17px;height:17px;flex:none}
+.stepbuttons button{padding:13px 4px;font-size:clamp(14px,.72vw,18px);white-space:nowrap}.playrow button{padding:12px 8px}
+.speedticks{font-size:13px}input[type=range]{height:24px}
+#projection{height:clamp(180px,17vh,220px)}
+.legend{font-size:clamp(14px,.7vw,18px)}.hint{font-size:clamp(12px,.6vw,15px);bottom:53px}
+.wm{font-size:clamp(18px,.9vw,23px)}
+.lesson-column .explain{flex:0}.lesson-column .explain div{flex:none;padding:18px 22px}
+.explain strong{font-size:clamp(18px,.9vw,23px)}.explain p{font-size:clamp(16px,.8vw,20px)}
+.lesson-column .notice{font-size:clamp(13px,.65vw,16px)}
+.scene:fullscreen{height:100vh}
+@media(max-width:760px){
+header{padding:18px 16px}h1{font-size:26px}header p{font-size:15px}
+main{padding:0 12px;gap:12px}.scene{height:460px}
+.scenehead strong{font-size:14px}.views{max-width:185px;gap:5px}.views button{font-size:12px;padding:7px 8px}
+.card{padding:16px}.card h2{font-size:18px}.state{font-size:23px}.desc,.row,.checks{font-size:15px}
+button,select{font-size:15px}.force-note,.row small{font-size:12px}
+.legend{font-size:12px}.hint{font-size:11px;bottom:66px}.wm{font-size:15px}
+.explain strong{font-size:18px}.explain p{font-size:15px}.lesson-column .notice{font-size:12px}
+.scene:fullscreen{height:100vh}
+}
+</style></head><body>
+<header><div><div class="eyebrow">张专注物理 · 3D实验室</div><h1>通电线圈在磁场中转动</h1><p>观察电流与受力，比较往复摆动和持续转动。</p></div><div class="badge" id="modeBadge">教材演示 · 不改变线圈电流方向</div></header>
+<main><div class="lesson-column"><section class="scene" id="scene"><canvas id="view" aria-label="可旋转缩放的通电线圈三维模型"></canvas><div class="scenehead"><strong>磁场中的矩形线圈</strong><span id="supplyMode">柔性引线供电 · 无换向器</span></div><div class="views"><button data-camera="oblique" class="active">立体</button><button data-camera="front">轴端</button><button data-camera="top">俯视</button><button id="full">全屏</button></div><div class="hint"><span class="desktophint">左键旋转 · 右键平移 · 滚轮缩放</span><span class="mobilehint">单指旋转 · 双指缩放</span></div><div class="legend"><span><i style="background:#ffd578"></i>电流 I</span><span><i style="background:#ff70ad"></i>磁场力 F</span><span><i style="background:#2599b0"></i>磁场 N → S</span></div><div class="wm">张专注物理</div></section>
+<div class="explain"><div><strong>通电后为什么转动？</strong><p>ab、cd两边受到方向相反的磁场力，力的作用使线圈顺时针转动。</p></div><div><strong id="neutralTitle">平衡不等于没有力</strong><p id="neutralDesc">此时两边仍然受力，但力的作用线通过转轴，不能使线圈转动。已有的运动不会瞬间停止。</p></div><div><strong id="returnTitle">越过后为什么返回？</strong><p id="returnDesc">电流没有换向，两边受力方向保持不变，但转动作用反向。线圈先减速，再反向返回。</p></div></div>
+<div class="notice" id="modelNotice">模型说明：均匀磁场、理想转轴；通电时电流大小恒定。引线缠绕只作结构演示，不计算其弹力和受力；未模拟反电动势。开启摩擦和空气阻力时，线圈摆动逐渐减弱；关闭时，观察忽略这些阻力的理想运动。</div>
+</div><aside class="panel"><section class="card"><h2>01 / 四个关键位置</h2><div class="stepbuttons"><button data-preset="-65">初始位置</button><button data-preset="0">平衡位置</button><button data-preset="90">水平位置</button><button data-preset="65">结束位置</button></div><div class="state" id="state">顺时针受力</div><p class="desc" id="desc"></p><div class="row"><span id="switchLabel">开关</span><button id="switch">断开 · 无电流</button></div><div class="row"><span>偏离平衡位置</span><span class="value" id="angleText">−65°</span></div><input id="angle" aria-label="线圈转角" type="range" min="-180" max="180" step="1" value="-65"><div class="playrow"><button class="primary" id="play">开始演示</button><button id="reset">复位</button><button id="step">步进</button></div><div class="row"><label for="speed">线圈的速度</label><output id="speedText" for="speed" class="value">1.0×</output></div><input id="speed" aria-label="线圈的速度" type="range" min="0" max="3" step="0.1" value="1"><div class="speedticks" aria-hidden="true"><span>0×</span><span>1×</span><span>2×</span><span>3×</span></div></section>
+<section class="card"><h2>02 / 演示选项</h2><div class="checks"><label><input id="forces" type="checkbox" checked>磁场力方向</label><label><input id="current" type="checkbox" checked>显示电流方向</label><label><input id="field" type="checkbox" checked>磁感线</label><label title="中性面与磁场垂直；线圈位于该面时转动作用为零"><input id="neutral" type="checkbox" checked>中性面</label><label><input id="autorotate" type="checkbox">旋转</label><label><input id="resistance" type="checkbox">摩擦和空气阻力</label><label class="continuous-option"><input id="parts" type="checkbox">显示转子和定子</label><label class="continuous-option" title="半圈通电，半圈断电；导线随转动绞合"><input id="halfPower" type="checkbox">通过断电使线圈连续转动</label><label class="continuous-option" title="两半铜环与电刷替代绞合引线，每半圈自动换向"><input id="commutator" type="checkbox">通过换向器使线圈连续转动</label></div><p class="force-note" id="forceNote">粉色：ab、cd 的磁场力，大小保持不变。</p><p class="force-note" id="windingStatus" aria-live="off"></p></section>
+<section class="card"><h2>03 / 沿转轴看受力</h2><canvas id="projection" aria-label="沿转轴观察的同步受力投影"></canvas><div class="row"><small>顺／逆时针均以此视角为准</small><span class="value" id="motion">静止</span></div></section>
+</aside></main>
+
+<div class="qr-peekbar" aria-label="查看完整二维码">
+<button class="qr-peek" data-qr="contact" aria-label="点击查看完整微信好友二维码"><span class="qr-window"><img src="{{wechat-contact}}" alt="微信二维码局部预览"></span><span><strong>更多课件与资料</strong><small>点击查看完整二维码</small></span></button>
+<button class="qr-peek" data-qr="donate" aria-label="点击查看完整打赏二维码"><span class="qr-window"><img src="{{wechat-donate}}" alt="打赏二维码局部预览"></span><span><strong>支持免费课件</strong><small>点击查看 · 打赏自愿</small></span></button>
+</div>
+<dialog id="qrDialog" aria-labelledby="qrTitle"><div class="qr-dialog-head"><h2 id="qrTitle">课件资料与支持作者</h2><button id="closeQr" aria-label="关闭二维码">关闭</button></div><div class="contact"><div><img src="{{wechat-contact}}" alt="微信好友二维码"><p>获取更多课件和资料，可微信扫码添加好友。</p></div><div><img src="{{wechat-donate}}" alt="微信打赏二维码"><p>如果这份课件帮助到了你，欢迎打赏。</p></div></div></dialog>
+<script>{{THREE}}</script><script>{{APP}}</script></body></html>
